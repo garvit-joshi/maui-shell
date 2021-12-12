@@ -8,7 +8,7 @@ _Maui Shell is a convergent shell for desktop, tablets and phones._
 Maui Shell is composed of two parts:
 
 - Cask is the shell container and elements templates, such as panels, popups, cards etc.
-- Zpace is the composer, which is the layout and places the windows /surfaces into the Cask container.
+- Zpace is the composer, which is the layout and places the windows or surfaces into the Cask container.
 
 # Screenshots
 
@@ -27,6 +27,7 @@ libkf5i18n-dev
 libkf5kio-dev
 libkf5notifications-dev
 libkf5service-dev
+libqt5svg5-dev
 mauikit
 qtbase5-dev
 qtdeclarative5-dev
