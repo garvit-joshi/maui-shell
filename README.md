@@ -28,6 +28,7 @@ libkf5kio-dev
 libkf5notifications-dev
 libkf5service-dev
 libqt5svg5-dev
+libqt5waylandcompositor5-dev
 mauikit
 qtbase5-dev
 qtdeclarative5-dev
