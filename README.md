@@ -19,7 +19,7 @@ Maui Shell is composed of two parts:
 ### Requirements
 
 #### Debian/Ubuntu
-##### Clip needs ECM > 5.70
+##### Maui Shell needs ECM > 5.70
 
 ```
 libkf5config-dev
