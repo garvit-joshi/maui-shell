@@ -52,9 +52,16 @@ If you want to run it on the Linux console without an X11 session
 ```
 #!/bin/sh
 export QT_QPA_PLATFORM=eglfs
-export QT_AUTO_SCREEN_SCALE_FACTOR=0 # don't embiggen stuff on "high-res" displays
-#export QT_QPA_EGLFS_PHYSICAL_WIDTH=480 # in case it's not detected
-#export QT_QPA_EGLFS_PHYSICAL_HEIGHT=270 # or you wish to override
+
+# don't enlarge stuff on "high-res" displays
+export QT_AUTO_SCREEN_SCALE_FACTOR=0 
+
+# in case it's not detected
+# or you wish to override
+#
+# export QT_QPA_EGLFS_PHYSICAL_WIDTH=480 
+# export QT_QPA_EGLFS_PHYSICAL_HEIGHT=270 
+
 # try to restart if it crashes; write a log file
 cask -r -l /tmp/cask.log
 ```

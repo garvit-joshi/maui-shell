@@ -57,7 +57,7 @@ rm -rf maui-shell/{screenshots,wallpapers,LICENSE,README.md}
 
 ### Compile Source
 
-mkdir -p maui-shell/build && cd maui-shellbuild
+mkdir -p maui-shell/build && cd maui-shell/build
 
 cmake \
 	-DCMAKE_INSTALL_PREFIX=/usr \
