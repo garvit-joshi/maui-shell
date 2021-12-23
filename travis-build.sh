@@ -29,9 +29,9 @@ wget -qO /etc/apt/sources.list.d/neon-user-repo.list https://raw.githubuserconte
 DEBIAN_FRONTEND=noninteractive apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
 	55751E5D > /dev/null
 
-curl -L https://packagecloud.io/nitrux/repo/gpgkey | apt-key add -;
+curl -L https://packagecloud.io/nitrux/testing/gpgkey | apt-key add -;
 
-wget -qO /etc/apt/sources.list.d/nitrux-repo-repo.list https://raw.githubusercontent.com/Nitrux/iso-tool/development/configs/files/sources.list.nitrux
+wget -qO /etc/apt/sources.list.d/nitrux-testing-repo.list https://raw.githubusercontent.com/Nitrux/iso-tool/development/configs/files/sources.list.nitrux.testing
 
 DEBIAN_FRONTEND=noninteractive apt -qq update
 
@@ -47,7 +47,7 @@ DEBIAN_FRONTEND=noninteractive apt -qq -yy install --no-install-recommends \
 	libkf5service-dev \
 	libqt5svg5-dev \
 	libqt5waylandcompositor5-dev \
-	mauikit \
+	mauikit-git \
 	qtbase5-dev \
 	qtdeclarative5-dev \
 	qtquickcontrols2-5-dev
@@ -96,8 +96,8 @@ make
 checkinstall -D -y \
 	--install=no \
 	--fstrans=yes \
-	--pkgname=maui-shell \
-	--pkgversion=2.1.0 \
+	--pkgname=maui-shell-git \
+	--pkgversion=2.1.1+git \
 	--pkgarch=amd64 \
 	--pkgrelease="1" \
 	--pkglicense=LGPL-3 \
@@ -105,8 +105,8 @@ checkinstall -D -y \
 	--pkgsource=maui-shell \
 	--pakdir=../.. \
 	--maintainer=uri_herrera@nxos.org \
-	--provides=maui-shell \
-	--requires="libc6,libkf5configcore5,libkf5coreaddons5,libkf5i18n5,libkf5kiocore5,libkf5service5,mauikit \(\>= 2.1.0\),libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,qml-module-qt-labs-platform" \
+	--provides=maui-shell-git \
+	--requires="libc6,libkf5configcore5,libkf5coreaddons5,libkf5i18n5,libkf5kiocore5,libkf5service5,mauikit-git \(\>= 2.1.1\),libqt5core5a,libqt5gui5,libqt5qml5,libqt5widgets5,libstdc++6,qml-module-qt-labs-platform" \
 	--nodoc \
 	--strip=no \
 	--stripso=yes \
