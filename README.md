@@ -3,7 +3,7 @@
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Generic badge](https://img.shields.io/badge/OS-Linux-blue.svg)](https://shields.io/)
 
-_Maui Shell is a convergent shell for desktop, tablets and phones._
+_Maui Shell is a convergent shell for desktops, tablets, and phones._
 
 Maui Shell is composed of two parts:
 
