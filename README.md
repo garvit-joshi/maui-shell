@@ -12,7 +12,7 @@ Maui Shell is composed of two parts:
 
 # Screenshots
 
-![a screenshot](screenshots/desktop/screenshot.png "screenshot")
+![a screenshot](https://github.com/Nitrux/maui-shell/blob/master/screenshots/desktop/screenshot.png "screenshot")
 
 # Build
 
